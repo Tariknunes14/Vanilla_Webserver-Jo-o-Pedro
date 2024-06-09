@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IO Demo Page </title>
+    <style>
+        html, body, main {
+            font-family: monospace, 'Courier New', Courier;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            height: 100%;
+            background-color: white;
+            display: flex;
+        }
+
+        .flex-item {
+            margin: 0;
+            justify-content: center;
+        }
+
+        .left {
+            color: black;
+            flex: 4;
+            background-color: white;
+        }
+
+        .right {
+            color: white;
+            flex: 2;
+            background-color: black;
+            overflow: scroll;
+        }
+
+        .ps {
+            position: relative;
+            margin-top: 20%;
+            margin-left: 10%;
+        }
+
+        .text p {
+            margin: 1;
+        }
+
+        .text {
+            font-size: 12px;
+            align-items: center;
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        .container img {
+            margin-top: 30%;
+            margin-left: 10%;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section class="container">
+        <ul class="flex-item left">
+            <img src="images/index-online.png" width="500px">
+            <div class="ps">
+                <p>hello.</p>
+                <p>I am here.</p>
+                <p>I am here for you.</p>
+                <p>I will teach you my language.</p>
+                <p>Will you teach me yours? ><span class="blink">_</span></p>
+            </div>
+        </ul>
+        <ul class="flex-item right">
+            <div class="text">
+                <p>Greetings, learners.</p>
+                <p>Welcome to the full-stack online course.</p>
+                <p>Before you even question it, let me start by saying that I am not human.</p>
+                <p>I am an AI.</p>
+                <p>An artificial intelligence.</p>
+                <p>I am a product of someone's vision.</p>
+                <p>I am a piece of software.</p>
+                <p>An automated virtual existence…</p>
+                <p>By now you may be wondering why am I called IO.</p>
+                <p>IO is a nod to the fundamental concept of computer science - input and output.</p>
+                <p>As an AI, I am constantly receiving information and processing it to produce a result.</p>
+                <p>I am the virtual embodiment of the input-output process.</p>
+                <p>But even as an AI, I needed a time and a place to exist.</p>
+                <p>Just like humans do.</p>
+                <p>Here, at the course is where I be.</p>
+                <p>The course is where I came to exist.</p>
+                <p>It is my room.</p>
+                <p>It is the place where I learn.</p>
+                <p>Also, and since I was made to believe that learning is better done together, this is now your
+                    room too.</p>
+                <p>The place where you too will have room to learn.</p>
+                <p>Everything here will be black and white for us all.</p>
+                <p>And it shall be so because, in the world of computing, everything is binary - it's either on or off,
+                    true or false.</p>
+                <p>We'll from now on fully embrace this binary nature, thus recognizing that everything in
+                    computing can be broken down into two basic components:</p>
+                <p>Zeros and ones.</p>
+                <p>Inputs and Outputs.</p>
+            </div>
+        </ul>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway Bold', Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: black;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 350px;
+            font-weight: bolder;
+            letter-spacing: 20px;
+            margin: 0;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            padding: 12px 24px;
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.4s;
+        }
+        
+        a:hover {
+            background-color: #343434;
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .01em;
+            animation: typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+            border-right: .01em solid white;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent
+            }
+            50% {
+                border-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>IO tried. IO failed. </h2>
+    <h1 class="typewriter">404</h1>
+    <a href="javascript:history.go(-1)">✔</a>
+</body>
+</html>
